@@ -1,5 +1,9 @@
 import sensors from "./src/sensors";
-export { setUpdateInterval as setUpdateIntervalForType, setLogLevelForType, isAvailable } from "./src/rnsensors";
+export {
+  setUpdateInterval as setUpdateIntervalForType,
+  setLogLevelForType,
+  isSensorAvailable as IsSensorTypeAvailable,
+} from "./src/rnsensors";
 
 export const SensorTypes = {
   accelerometer: "accelerometer",
@@ -7,7 +11,7 @@ export const SensorTypes = {
   magnetometer: "magnetometer",
   barometer: "barometer",
   orientation: "orientation",
-  gravity: "gravity"
+  gravity: "gravity",
 };
 
 export const { accelerometer, gyroscope, magnetometer, barometer, orientation, gravity } = sensors;

@@ -41,6 +41,14 @@ export function isAvailable(type) {
   return promise;
 }
 
+export function isSensorAvailable(type) {
+  if (availableSensors[type]) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 export function stop(type) {
   const api = nativeApis.get(type.toLocaleLowerCase());
   api.stopUpdates();
