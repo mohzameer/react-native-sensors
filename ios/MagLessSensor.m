@@ -9,8 +9,8 @@
 #import "RNSensorMagLessSensor.h"
 #import <React/RCTBridge.h>
 #import <React/RCTEventDispatcher.h>
-#import "RNSensorsMagnetometer.h"
-#import "RNSensorsUtils.h"
+#import "Magnetometer.h"
+#import "Utils.h"
 
 @implementation MagLessSensor
 

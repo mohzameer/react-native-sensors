@@ -3,8 +3,8 @@
 
 #import <React/RCTBridge.h>
 #import <React/RCTEventDispatcher.h>
-#import "RNSensorsAccelerometer.h"
-#import "RNSensorsUtils.h"
+#import "Accelerometer.h"
+#import "Utils.h"
 
 @implementation Accelerometer
 

@@ -4,8 +4,8 @@
 
 #import <React/RCTBridge.h>
 #import <React/RCTEventDispatcher.h>
-#import "RNSensorsOrientation.h"
-#import "RNSensorsUtils.h"
+#import "Orientation.h"
+#import "Utils.h"
 
 @implementation Orientation
 

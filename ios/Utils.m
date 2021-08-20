@@ -1,4 +1,4 @@
-#import "RNSensorsUtils.h"
+#import "Utils.h"
 
 @implementation Utils
 
