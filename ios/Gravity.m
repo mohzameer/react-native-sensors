@@ -4,10 +4,10 @@
 
 #import <React/RCTBridge.h>
 #import <React/RCTEventDispatcher.h>
-#import "RNSensorsGravity.h"
-#import "RNSensorsUtils.h"
+#import "Gravity.h"
+#import "Utils.h"
 
-@implementation RNSensorsGravity
+@implementation Gravity
 
 @synthesize bridge = _bridge;
 

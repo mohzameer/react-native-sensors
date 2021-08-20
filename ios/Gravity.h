@@ -4,7 +4,7 @@
 #import <CoreMotion/CoreMotion.h>
 #import <React/RCTEventEmitter.h>
 
-@interface RNSensorsGravity : RCTEventEmitter <RCTBridgeModule> {
+@interface Gravity : RCTEventEmitter <RCTBridgeModule> {
     CMMotionManager *_motionManager;
     int logLevel;
 }
