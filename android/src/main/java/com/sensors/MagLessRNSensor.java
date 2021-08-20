@@ -94,19 +94,23 @@ public class MagLessRNSensor extends ReactContextBaseJavaModule implements Senso
 
   @Override
   public void onSensorChanged(SensorEvent sensorEvent) {
+    WritableMap map = this.arguments.createMap();
+    map.putDouble("yaw", 12);
+    map.putDouble("pitch", 12);
+    map.putDouble("roll", 12);
 
     double tempMs = (double) System.currentTimeMillis();
     if (tempMs - lastReading >= interval) {
       lastReading = tempMs;
-      WritableMap map = this.arguments.createMap();
+
 
       switch (sensorEvent.sensor.getType()) {
         case Sensor.TYPE_ACCELEROMETER:
           System.arraycopy(sensorEvent.values, 0, mAcceleration, 0, 3);   // save datas
           calculateAccMagOrientation();                       // then calculate new orientation
-          map.putDouble("yaw", 12);
-          map.putDouble("pitch", 12);
-          map.putDouble("roll", 12);
+          map.putDouble("yaw", mAccMagOrientation[0]);
+          map.putDouble("pitch", mAccMagOrientation[1]);
+          map.putDouble("roll", mAccMagOrientation[2]);
           break;
 
         default: break;
