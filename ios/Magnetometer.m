@@ -4,10 +4,10 @@
 
 #import <React/RCTBridge.h>
 #import <React/RCTEventDispatcher.h>
-#import "Magnetometer.h"
+#import "RNMagnetometer.h"
 #import "Utils.h"
 
-@implementation Magnetometer
+@implementation RNMagnetometer
 
 @synthesize bridge = _bridge;
 

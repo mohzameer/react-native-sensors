@@ -3,15 +3,23 @@ import { Observable } from "rxjs";
 import { publish, refCount } from "rxjs/operators";
 import * as RNSensors from "./rnsensors";
 
-const {
-  RNSensorsGyroscope: GyroNative,
-  RNSensorsAccelerometer: AccNative,
-  RNSensorsMagnetometer: MagnNative,
-  RNSensorsBarometer: BarNative,
-  RNSensorsOrientation: OrientNative,
-  RNSensorsGravity: GravNative,
-  RNSensorMagLessSensor: Magless,
-} = NativeModules;
+// const {
+//   RNSensorsGyroscope: GyroNative,
+//   RNSensorsAccelerometer: AccNative,
+//   RNSensorsMagnetometer: MagnNative,
+//   RNSensorsBarometer: BarNative,
+//   RNSensorsOrientation: OrientNative,
+//   RNSensorsGravity: GravNative,
+//   RNSensorMagLessSensor: Magless,
+// } = NativeModules;
+
+let GyroNative = Platform.OS === "ios" ? NativeModules.Gyroscope : NativeModules.RNSensorsGyroscope;
+let AccNative = Platform.OS === "ios" ? NativeModules.Accelerometer : NativeModules.RNSensorsAccelerometer;
+let MagnNative = Platform.OS === "ios" ? NativeModules.Magnetometer : NativeModules.RNSensorsMagnetometer;
+let BarNative = Platform.OS === "ios" ? NativeModules.Barometer : NativeModules.RNSensorsBarometer;
+let OrientNative = Platform.OS === "ios" ? NativeModules.Orientation : NativeModules.RNSensorsOrientation;
+let GravNative = Platform.OS === "ios" ? NativeModules.Gravity : NativeModules.RNSensorsGravity;
+let Magless = Platform.OS === "ios" ? NativeModules.MagLessSensor : NativeModules.RNSensorMagLessSensor;
 
 const listenerKeys = new Map([
   ["accelerometer", "RNSensorsAccelerometer"],
