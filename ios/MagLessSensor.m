@@ -6,7 +6,7 @@
 //  Copyright © 2021 Facebook. All rights reserved.
 //
 
-#import "RNSensorMagLessSensor.h"
+#import "MagLessSensor.h"
 #import <React/RCTBridge.h>
 #import <React/RCTEventDispatcher.h>
 #import "Magnetometer.h"
