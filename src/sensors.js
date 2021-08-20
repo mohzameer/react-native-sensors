@@ -10,7 +10,7 @@ const {
   RNSensorsBarometer: BarNative,
   RNSensorsOrientation: OrientNative,
   RNSensorsGravity: GravNative,
-  MagLessRNSensor: Magless,
+  RNSensorMagLessSensor: Magless,
 } = NativeModules;
 
 const listenerKeys = new Map([
