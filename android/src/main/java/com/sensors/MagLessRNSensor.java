@@ -99,6 +99,8 @@ public class MagLessRNSensor extends ReactContextBaseJavaModule implements Senso
     map.putDouble("pitch", 12);
     map.putDouble("roll", 12);
 
+    Log.e("ERROR", "Sensor type - "+sensorEvent.sensor.getType());
+
     double tempMs = (double) System.currentTimeMillis();
     if (tempMs - lastReading >= interval) {
       lastReading = tempMs;
