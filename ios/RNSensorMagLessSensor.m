@@ -30,7 +30,7 @@ RCT_EXPORT_MODULE();
 
 - (NSArray<NSString *> *)supportedEvents
 {
-  return @[@"Magless"];
+  return @[@"RNSensorMagLessSensor"];
 }
 
 + (BOOL)requiresMainQueueSetup

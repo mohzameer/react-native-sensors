@@ -23,7 +23,7 @@ RCT_EXPORT_MODULE();
 
 - (NSArray<NSString *> *)supportedEvents
 {
-  return @[@"Gyroscope"];
+  return @[@"RNSensorsGyroscope"];
 }
 
 + (BOOL)requiresMainQueueSetup

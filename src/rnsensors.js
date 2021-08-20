@@ -1,4 +1,5 @@
 import { NativeModules } from "react-native";
+
 const {
   RNSensorsGyroscope: GyroNative,
   RNSensorsAccelerometer: AccNative,

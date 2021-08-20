@@ -30,7 +30,7 @@ RCT_EXPORT_MODULE();
 
 - (NSArray<NSString *> *)supportedEvents
 {
-  return @[@"Accelerometer"];
+  return @[@"RNSensorsAccelerometer"];
 }
 
 RCT_REMAP_METHOD(isAvailable,

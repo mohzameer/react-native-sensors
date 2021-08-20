@@ -26,7 +26,7 @@ RCT_EXPORT_MODULE();
 
 - (NSArray<NSString *> *)supportedEvents
 {
-  return @[@"Orientation"];
+  return @[@"RNSensorsOrientation"];
 }
 
 + (BOOL)requiresMainQueueSetup
