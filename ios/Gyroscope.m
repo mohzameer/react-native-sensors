@@ -5,7 +5,7 @@
 #import <React/RCTEventDispatcher.h>
 #import "RNSensorsUtils.h"
 
-@implementation RNSensorsGyroscope
+@implementation Gyroscope
 
 @synthesize bridge = _bridge;
 RCT_EXPORT_MODULE();
@@ -23,7 +23,7 @@ RCT_EXPORT_MODULE();
 
 - (NSArray<NSString *> *)supportedEvents
 {
-  return @[@"RNSensorsGyroscope"];
+  return @[@"Gyroscope"];
 }
 
 + (BOOL)requiresMainQueueSetup

@@ -1,20 +1,12 @@
-//
-//  RNSensorMagLessSensor.h
-//  RNSensors
-//
-//  Created by Mohammed Zameer on 2021-08-20.
-//  Copyright © 2021 Facebook. All rights reserved.
-//
+// Inspired by https://github.com/pwmckenna/react-native-motion-manager
 
-#import <Foundation/Foundation.h>
 #import <React/RCTBridgeModule.h>
 #import <CoreMotion/CoreMotion.h>
 #import <React/RCTEventEmitter.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface RNSensorMagLessSensor : RCTEventEmitter <RCTBridgeModule> {
-
+@interface Orientation : RCTEventEmitter <RCTBridgeModule> {
+    CMMotionManager *_motionManager;
+    int logLevel;
 }
 
 - (void) isAvailableWithResolver:(RCTPromiseResolveBlock) resolve
@@ -27,5 +19,3 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) stopUpdates;
 
 @end
-
-NS_ASSUME_NONNULL_END

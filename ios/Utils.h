@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface RNSensorsUtils : NSObject
+@interface Utils : NSObject
 
 + (double)sensorTimestampToEpochMilliseconds:(double) timestamp;
 

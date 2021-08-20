@@ -4,7 +4,7 @@
 #import <CoreMotion/CoreMotion.h>
 #import <React/RCTEventEmitter.h>
 
-@interface RNSensorsBarometer : RCTEventEmitter <RCTBridgeModule> {
+@interface Barometer : RCTEventEmitter <RCTBridgeModule> {
     CMAltimeter *_altimeter;
     int logLevel;
 }

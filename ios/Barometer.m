@@ -7,7 +7,7 @@
 #import <CoreMotion/CoreMotion.h>
 #import "RNSensorsUtils.h"
 
-@implementation RNSensorsBarometer
+@implementation Barometer
 
 @synthesize bridge = _bridge;
 
@@ -26,7 +26,7 @@ RCT_EXPORT_MODULE();
 
 - (NSArray<NSString *> *)supportedEvents
 {
-  return @[@"RNSensorsBarometer"];
+  return @[@"Barometer"];
 }
 
 + (BOOL)requiresMainQueueSetup

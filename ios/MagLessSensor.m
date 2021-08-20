@@ -12,7 +12,7 @@
 #import "RNSensorsMagnetometer.h"
 #import "RNSensorsUtils.h"
 
-@implementation RNSensorMagLessSensor
+@implementation MagLessSensor
 
 @synthesize bridge = _bridge;
 
@@ -30,7 +30,7 @@ RCT_EXPORT_MODULE();
 
 - (NSArray<NSString *> *)supportedEvents
 {
-  return @[@"RNSensorMagLessSensor"];
+  return @[@"Magless"];
 }
 
 + (BOOL)requiresMainQueueSetup

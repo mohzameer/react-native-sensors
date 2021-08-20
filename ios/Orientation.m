@@ -7,7 +7,7 @@
 #import "RNSensorsOrientation.h"
 #import "RNSensorsUtils.h"
 
-@implementation RNSensorsOrientation
+@implementation Orientation
 
 @synthesize bridge = _bridge;
 
@@ -26,7 +26,7 @@ RCT_EXPORT_MODULE();
 
 - (NSArray<NSString *> *)supportedEvents
 {
-  return @[@"RNSensorsOrientation"];
+  return @[@"Orientation"];
 }
 
 + (BOOL)requiresMainQueueSetup
