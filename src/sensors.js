@@ -20,7 +20,7 @@ const listenerKeys = new Map([
   ["barometer", "RNSensorsBarometer"],
   ["orientation", "RNSensorsOrientation"],
   ["gravity", "RNSensorsGravity"],
-  ["magless", "MagLessRNSensor"],
+  ["magless", "RNSensorMagLessSensor"],
 ]);
 
 const nativeApis = new Map([
