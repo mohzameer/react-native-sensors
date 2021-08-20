@@ -14,8 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RNSensorMagLessSensor : RCTEventEmitter <RCTBridgeModule> {
-    CMMotionManager *_motionManager;
-    int logLevel;
+
 }
 
 - (void) isAvailableWithResolver:(RCTPromiseResolveBlock) resolve

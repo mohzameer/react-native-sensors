@@ -41,7 +41,7 @@ RCT_EXPORT_MODULE();
 RCT_REMAP_METHOD(isAvailable,
                  resolver:(RCTPromiseResolveBlock)resolve
                  rejecter:(RCTPromiseRejectBlock)reject) {
-    return false;
+   
 }
 
 
