@@ -22,13 +22,13 @@ let GravNative = Platform.OS === "ios" ? NativeModules.Gravity : NativeModules.R
 let Magless = Platform.OS === "ios" ? NativeModules.MagLessSensor : NativeModules.RNSensorMagLessSensor;
 
 const listenerKeys = new Map([
-  ["accelerometer", "RNSensorsAccelerometer"],
-  ["gyroscope", "RNSensorsGyroscope"],
-  ["magnetometer", "RNSensorsMagnetometer"],
-  ["barometer", "RNSensorsBarometer"],
-  ["orientation", "RNSensorsOrientation"],
-  ["gravity", "RNSensorsGravity"],
-  ["magless", "RNSensorMagLessSensor"],
+  ["accelerometer", Platform.OS === "ios" ? "Accelerometer" : "RNSensorsAccelerometer"],
+  ["gyroscope", Platform.OS === "ios" ? "Gyroscope" : "RNSensorsGyroscope"],
+  ["magnetometer", Platform.OS === "ios" ? "Magnetometer" : "RNSensorsMagnetometer"],
+  ["barometer", Platform.OS === "ios" ? "Barometer" : "RNSensorsBarometer"],
+  ["orientation", Platform.OS === "ios" ? "Orientation" : "RNSensorsOrientation"],
+  ["gravity", Platform.OS === "ios" ? "Gravity" : "RNSensorsGravity"],
+  ["magless", Platform.OS === "ios" ? "MagLessSensor" : "RNSensorMagLessSensor"],
 ]);
 
 const nativeApis = new Map([
