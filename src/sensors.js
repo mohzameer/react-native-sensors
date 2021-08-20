@@ -1,4 +1,4 @@
-import { NativeEventEmitter, NativeModules } from "react-native";
+import { NativeEventEmitter, NativeModules, Platform } from "react-native";
 import { Observable } from "rxjs";
 import { publish, refCount } from "rxjs/operators";
 import * as RNSensors from "./rnsensors";

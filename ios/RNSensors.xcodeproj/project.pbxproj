@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49C750D226CFAF3B001DA1B9 /* RNSensorMagLessSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C750D126CFAF3B001DA1B9 /* RNSensorMagLessSensor.m */; };
 		8C5B457D24598D650018E8BA /* RNSensorsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5B457C24598D650018E8BA /* RNSensorsUtils.m */; };
 		B18A2800205ADE2700ED2038 /* RNSensorsMagnetometer.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A27FF205ADE2700ED2038 /* RNSensorsMagnetometer.m */; };
 		D5E5AE36256688A10036B102 /* RNSensorsOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E5AE35256688A10036B102 /* RNSensorsOrientation.m */; };
@@ -29,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNSensors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNSensors.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C750D026CFAF3B001DA1B9 /* RNSensorMagLessSensor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNSensorMagLessSensor.h; sourceTree = "<group>"; };
+		49C750D126CFAF3B001DA1B9 /* RNSensorMagLessSensor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNSensorMagLessSensor.m; sourceTree = "<group>"; };
 		8C5B457C24598D650018E8BA /* RNSensorsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSensorsUtils.m; sourceTree = "<group>"; };
 		8C5B457F245992780018E8BA /* RNSensorsUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNSensorsUtils.h; sourceTree = "<group>"; };
 		B18A27FE205ADE2700ED2038 /* RNSensorsMagnetometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSensorsMagnetometer.h; sourceTree = "<group>"; };
@@ -65,6 +68,8 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				49C750D026CFAF3B001DA1B9 /* RNSensorMagLessSensor.h */,
+				49C750D126CFAF3B001DA1B9 /* RNSensorMagLessSensor.m */,
 				D5E5AE34256688A10036B102 /* RNSensorsOrientation.h */,
 				D5E5AE35256688A10036B102 /* RNSensorsOrientation.m */,
 				8C5B457F245992780018E8BA /* RNSensorsUtils.h */,
@@ -140,6 +145,7 @@
 			files = (
 				E7FCE1881E14639E005C5155 /* RNSensorsGyroscope.m in Sources */,
 				E7FCE18B1E150266005C5155 /* RNSensorsAccelerometer.m in Sources */,
+				49C750D226CFAF3B001DA1B9 /* RNSensorMagLessSensor.m in Sources */,
 				D5E5AE36256688A10036B102 /* RNSensorsOrientation.m in Sources */,
 				B18A2800205ADE2700ED2038 /* RNSensorsMagnetometer.m in Sources */,
 				8C5B457D24598D650018E8BA /* RNSensorsUtils.m in Sources */,
