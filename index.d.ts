@@ -8,6 +8,7 @@ declare module "react-native-sensors" {
     barometer: "barometer";
     orientation: "orientation";
     gravity: "gravity";
+    magless: "magless";
   };
 
   export const SensorTypes: Sensors;
@@ -41,6 +42,13 @@ declare module "react-native-sensors" {
     timestamp: number;
   }
 
+  export interface MaglessData {
+    pitch: number;
+    roll: number;
+    yaw: number;
+    timestamp: number;
+  }
+
   type SensorsBase = {
     accelerometer: Observable<SensorData>;
     gyroscope: Observable<SensorData>;
@@ -48,9 +56,10 @@ declare module "react-native-sensors" {
     barometer: Observable<BarometerData>;
     orientation: Observable<OrientationData>;
     gravity: Observable<SensorData>;
+    magless: Observable<MaglessData>;
   };
 
-  export const { accelerometer, gyroscope, magnetometer, barometer, orientation, gravity }: SensorsBase;
+  export const { accelerometer, gyroscope, magnetometer, barometer, orientation, gravity, magless }: SensorsBase;
 
   const sensors: SensorsBase;
 
